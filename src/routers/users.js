@@ -2,9 +2,9 @@ const express = require('express')
 const auth = require('../middleware/auth')
 const multer = require('multer')
 const sharp = require('sharp')
-const { sendWelcomeEmail, sendCancelationEmail } = require('../emails/account')
 const User = require('../models/users')
 const router = new express.Router()
+const { sendWelcomeEmail, sendCancelationEmail } = require('../emails/account')
 
 
 // => Create user
